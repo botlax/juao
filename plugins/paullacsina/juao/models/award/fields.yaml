@@ -1,0 +1,12 @@
+fields:
+    award:
+        label: Award
+        span: auto
+        required: 1
+        type: text
+    photo:
+        label: Photo
+        mode: image
+        span: auto
+        required: 1
+        type: mediafinder

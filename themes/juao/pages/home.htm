@@ -1,0 +1,141 @@
+title = "Home"
+url = "/"
+layout = "front"
+is_hidden = 0
+==
+<?php
+public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Bg;
+        use Paullacsina\Juao\Models\Work;
+        use Paullacsina\Juao\Models\Social;
+
+
+        $this['front'] = Bg::where('description','Frontpage')->first();
+        $this['principle'] = Bg::where('description','Principle')->first();
+        
+        $this['socials'] = Social::all();
+
+        $this['qWorks'] = Work::whereHas('branch',function($query){
+        	$query->where('location','Qatar');
+    	})->orderBy('order','ASC')->get();
+
+    	$this['uWorks'] = Work::whereHas('branch',function($query){
+        	$query->where('location','UAE');
+    	})->orderBy('order','ASC')->get();
+
+    	$this['logo'] = Session::get('logo');
+
+    }
+?>
+==
+<!-- Intro -->
+	<div id="banner" style="background-image:url('{{ front.photo | media }}');">
+		<h1>We are ready to make noise now</h1>
+		<a href="#" class="banner-logo" style="background-image:url('{{ logo | media }}');">Just Us &amp; Otto</a>
+	</div>
+
+<!-- Main -->
+	<div id="main">
+		<div class="mouse-scroll-wrapper">
+			<a href="#intro" class="mouse-scroll scrolly"></a>
+		</div>
+
+		<div id="nav-wrapper">
+			<header id="header-main" class="clearfix">
+				<a href="#" class="logo" style="background-image:url('{{ logo | media }}');">Just Us &amp; Otto</a>
+				<nav id="social-nav2">
+					<ul>
+						{% for social in socials %}
+						<li class="{{ social.platform }}"><a href="{{ social.link }}">{{ social.platform }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+
+				<nav id="main-nav2">
+					<ul>
+						<li><a href="{{url('about')}}">About</a></li>
+            			<li><a href="{{url('work')}}">Work</a></li>
+            			<li><a href="{{url('clients')}}">Clients</a></li>
+            			<li><a href="{{url('careers')}}">Careers</a></li>
+            			<li><a href="{{url('contact')}}">Contact</a></li>
+					</ul>
+				</nav>
+				<a class="mobile-toggle">
+					<span></span>
+				</a>
+			</header>
+		</div>
+
+		<section id="intro" class="clearfix">
+			<section class="main-intro" style="background-image:url('{{ principle.photo | media }}');">
+				<div class="content-wrapper">
+					<header>
+						<h2>OUR MISSION</h2>
+						<h3 class="slash">CREATING FANS FOR BRANDS</h3>
+					</header>
+
+					<footer>
+						<a class="button" href="{{ url('about') }}" role="button"> More About us </a>
+					</footer>
+				</div>
+			</section>
+			<section class="side-intro">
+				<div class="rev_wrapper">
+					<div id="rev_slider_4_1" class="rev_slider fullscreenbanner" style="display:none;">
+						<ul>
+
+							{% for work in qWorks %}
+							<li data-transition="3dcurtain-vertical" data-slotamount="7" data-masterspeed="300" data-saveperformance="off">
+								<img src="{{ work.poster | media | replace({ (' '): '%20' }) }}" alt="{{ work.title }}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
+								<div data-splitout="none" data-voffset="-30" data-speed="300" class="tp-caption black sfr tp-resizeme" style="z-index: 5;white-space: nowrap;" data-start="500" data-endspeed="300" data-endelementdelay="0.1" data-elementdelay="0.1" data-y="bottom" data-x="25" data-easing="Power3.easeInOut" data-splitin="none">
+									<h2 class="home-block-title">{{ work.title }}</h2>
+									<h3 class="inverted slash">{{ work.tagline }}</h3>
+									<a class="button" href="{{ url('/work') }}" role="button"> See All Projects </a>
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+						<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+					</div>
+				</div>
+			</section>
+			{% if uWorks.toArray() is not empty %}
+			<section class="side-intro">
+				<div class="rev_wrapper">
+					<div id="rev_slider_5_1" class="rev_slider fullscreenbanner" style="display:none;">
+						<ul>
+							{% for work in uWorks %}
+							<li data-transition="3dcurtain-vertical" data-slotamount="7" data-masterspeed="300" data-saveperformance="off">
+								<img src="{{ work.poster | media }}" alt="{{ work.title }}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
+								<div data-splitout="none" data-voffset="-30" data-speed="300" class="tp-caption black sfr tp-resizeme" style="z-index: 5;white-space: nowrap;" data-start="500" data-endspeed="300" data-endelementdelay="0.1" data-elementdelay="0.1" data-y="bottom" data-x="25" data-easing="Power3.easeInOut" data-splitin="none">
+									<h2 class="home-block-title">{{ work.title }}</h2>
+									<h3 class="inverted slash">{{ work.tagline }}</h3>
+									<a class="button" href="{{ url('/work') }}" role="button"> See All Projects </a>
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+						<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+					</div>
+				</div>
+				
+			</section>
+			{% else %}
+			<section class="side-intro static" style="background-image:url('{{ 'contact-1.jpg' | media }}');">
+				<div class="content-wrapper">
+					<header>
+						<h2>CONNECT WITH US</h2>
+						<h3 class="slash">WE'LL BE GLAD TO HELP YOU</h3>
+					</header>
+
+					<footer>
+						<a class="button" href="{{ url('contact') }}" role="button"> Contact Us </a>
+					</footer>
+				</div>
+			</section>
+			{% endif %}
+	</div>

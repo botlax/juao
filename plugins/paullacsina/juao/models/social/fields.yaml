@@ -1,0 +1,16 @@
+fields:
+    platform:
+        label: Platform
+        options:
+            facebook: Facebook
+            instagram: Instagram
+            twitter: Twitter
+            linkedin: LinkedIn
+        span: auto
+        required: 1
+        type: dropdown
+    link:
+        label: Link
+        span: auto
+        required: 1
+        type: text

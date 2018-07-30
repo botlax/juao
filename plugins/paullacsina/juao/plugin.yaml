@@ -1,0 +1,43 @@
+plugin:
+    name: 'paullacsina.juao::lang.plugin.name'
+    description: 'paullacsina.juao::lang.plugin.description'
+    author: 'Paul Lacsina'
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'BG Photos'
+        url: paullacsina/juao/bgcontroller
+        icon: icon-file-photo-o
+    main-menu-item2:
+        label: Works
+        url: paullacsina/juao/workcontroller
+        icon: icon-building
+    main-menu-item3:
+        label: Branch
+        url: paullacsina/juao/branchcontroller
+        icon: icon-map-marker
+    main-menu-item4:
+        label: 'Social Media'
+        url: paullacsina/juao/socialcontroller
+        icon: icon-share-alt
+    main-menu-item5:
+        label: Management
+        url: paullacsina/juao/managementcontroller
+        icon: icon-users
+    main-menu-item6:
+        label: Awards
+        url: paullacsina/juao/awardcontroller
+        icon: icon-trophy
+    main-menu-item7:
+        label: Clients
+        url: paullacsina/juao/clientcontroller
+        icon: icon-user
+    main-menu-item8:
+        label: Contact
+        url: paullacsina/juao/contactcontroller
+        icon: icon-phone
+    main-menu-item9:
+        label: Vacancies
+        url: paullacsina/juao/vacantcontroller
+        icon: icon-folder-open

@@ -1,0 +1,10 @@
+name: BranchController
+form: $/paullacsina/juao/models/branch/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Branch
+defaultRedirect: paullacsina/juao/branchcontroller
+create:
+    redirect: 'paullacsina/juao/branchcontroller/update/:id'
+    redirectClose: paullacsina/juao/branchcontroller
+update:
+    redirect: paullacsina/juao/branchcontroller
+    redirectClose: paullacsina/juao/branchcontroller

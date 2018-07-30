@@ -1,0 +1,63 @@
+fields:
+    title:
+        label: 'Event Name'
+        span: auto
+        required: 1
+        type: text
+    tagline:
+        label: Tagline
+        span: auto
+        required: 1
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: auto
+        required: 1
+        type: textarea
+    poster:
+        label: Poster
+        mode: image
+        span: auto
+        required: 1
+        type: mediafinder
+    video:
+        label: Video
+        mode: file
+        span: auto
+        required: 1
+        type: mediafinder
+    client:
+        label: Client
+        span: auto
+        required: 1
+        type: text
+    branch:
+        label: Branch
+        nameFrom: location
+        descriptionFrom: description
+        span: auto
+        type: relation
+    photos:
+        label: Photos
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                photo:
+                    label: Photo
+                    mode: image
+                    span: auto
+                    type: mediafinder
+    mode:
+        label: Mode
+        options:
+            video: Video
+            slide: Slide
+        span: auto
+        type: dropdown
+    order:
+        label: Order
+        span: auto
+        type: number

@@ -1,0 +1,4 @@
+title: VacantController
+modelClass: PaulLacsina\Juao\Models\Vacant
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,4 @@
+title: BranchController
+modelClass: PaulLacsina\Juao\Models\Branch
+toolbar:
+    buttons: reorder_toolbar

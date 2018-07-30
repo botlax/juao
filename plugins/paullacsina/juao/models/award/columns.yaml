@@ -1,0 +1,6 @@
+columns:
+    award:
+        label: Award
+        type: text
+        searchable: true
+        sortable: true

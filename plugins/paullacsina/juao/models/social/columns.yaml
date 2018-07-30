@@ -1,0 +1,11 @@
+columns:
+    platform:
+        label: Platform
+        type: text
+        searchable: true
+        sortable: true
+    link:
+        label: Link
+        type: text
+        searchable: true
+        sortable: true

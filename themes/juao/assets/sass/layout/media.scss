@@ -1,0 +1,595 @@
+@media screen and (max-width: 1680px) {
+	
+}
+
+@media screen and (max-width: 1280px) {
+
+	.frontpage #main{
+
+		#intro{
+
+			.main-intro{
+				
+				.content-wrapper{
+
+					h2{
+						font-size: 75px;
+					}
+
+				}
+			}
+		}
+	}
+
+	#work{
+
+		> article{
+
+			.content-wrapper{
+				bottom: 7%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.list-article{
+		ul li{
+		    font-size: 28px;
+		}
+	}
+
+	h1{
+		font-size: 100px;
+		line-height: 100px;
+	}
+
+	h2{
+		font-size: 65px;
+	}
+
+	.careers-banner{
+		padding-top: 135px;
+	}
+
+	.mobile-nav-container, .mobile-toggle{
+		display: block;
+	}
+
+	.container{
+		width: 80%;
+	}
+
+	#main-nav, #main-nav2{
+		display: none !important;
+	}
+
+	#banner h1 {
+	    font-size: 7em;
+	}
+
+	#awards{
+		padding: 70px 40px;
+
+		.row section{
+			height: 250px;
+			margin-bottom: 40px;
+		}
+		
+	}
+
+	.project-close{
+		top: 25px;
+		right: 25px;
+		font-size: 25px;
+	}
+
+	#work{
+
+		> article{
+			min-height: 650px;
+	    	max-height: 650px;
+
+			.vjs-close{
+				top: 25px;
+				right: 25px;
+				font-size: 25px;
+			}
+
+			.content-wrapper{
+				width: 50%;
+				bottom: 20px;
+
+				video{
+					min-height: 650px !important;
+		    		max-height: 650px !important;
+				}
+
+				header h2{
+					width: 90%;
+					font-size: 70px !important;
+				    line-height: 60px !important;
+				    margin-bottom: 10px !important;
+				}
+			}
+		}
+	}
+
+	#contacts{
+		.contact-details{
+			header h2{
+			    font-size: 60px;
+			    line-height: 40px;
+			    margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 736px) {
+	
+	.list-article{
+		ul li{
+		    font-size: 23px;
+		}
+	}
+
+	h1{
+		font-size: 70px;
+		line-height: 60px;
+	}
+
+	h2{
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+
+	.general-intro{
+
+		article{
+			padding: 40px 25px 20px;
+
+		}
+
+		aside{
+			background-color: #1f0047;
+		}
+
+	}
+
+	.mouse-scroll-wrapper{
+		display: none;
+	}
+
+	.content-wrapper{
+		bottom: 10% !important;
+		left: 25px !important;
+		padding-right: 25px;
+	}
+
+	.small-title-banner{
+		padding: 25px;
+		padding-top: 40px;
+	}
+
+	.container{
+		padding: 0 25px;
+		padding-left: 20px;
+		width: 100%;
+	}
+
+	#banner {
+		padding-left: 25px;
+		position: relative;
+		background-attachment: scroll;
+		margin-top: -70px;
+		min-height: 500px;
+
+		h1 {
+		    font-size: 5em;
+		    position: absolute;
+		    top: auto;
+		    bottom: 1em;
+		}
+
+		.banner-logo{
+			bottom: 20px;
+    		right: 20px;
+		}
+	}
+
+	.frontpage #header, .frontpage #header-main, #header{
+		height: 70px;
+		padding: 15px 40px 15px 10px;
+		position: relative;
+
+		.logo{
+			float: left;
+			background-size: contain;
+			height: 50px;
+			width: 120px;
+		}
+
+		#main-nav, #social-nav,
+		#main-nav2, #social-nav2{
+
+			ul li a{
+			    line-height: 40px;
+			}
+
+		}
+	}
+
+	#header-main{
+		.logo{
+			height: 40px !important;
+			width: 100px !important;
+		}
+	}
+
+	#principles{
+		min-height: 500px;
+	}
+
+	#who-we-are{
+		padding: 25px;
+		padding-top: 50px !important;
+	    padding-bottom: 40px !important;
+	}
+
+	#management{
+		padding-top: 50px;
+
+		h2{
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+
+		.row section{
+
+			> header{
+				bottom: 10%;
+				left: 25px;
+			}
+
+			article{
+				padding: 25px 25px;
+			}
+		}
+	}
+
+	#awards{
+		padding: 50px 25px;
+
+		.row section{
+			height: 200px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	#work{
+		padding-top: 0;
+
+		> article{
+			min-height: 600px;
+	    	max-height: 600px;
+	    	overflow: hidden;
+
+			.content-wrapper{
+				width: 95%;
+				height: calc(50% - 100px);
+				bottom: 10px !important;
+
+				video{
+					min-height: 600px !important;
+		    		max-height: 600px !important;
+				}
+
+				header h2{
+					width: 100%;
+					font-size: 40px !important;
+				    line-height: 35px !important;
+				    margin-bottom: 10px !important;
+				}
+
+				p{
+					font-size: 13px;
+					line-height: 14px;
+				}
+			}
+		}
+	}
+
+	#clients{
+	
+		padding-bottom: 160px;
+
+		.header-article{
+			padding: 25px;
+			padding-top: 70px;
+			position: relative;
+		}
+		
+	}
+
+	#vacancies{
+		padding: 40px 25px 20px;
+
+		table{
+			margin:0 0 3em;
+
+			tbody{
+				tr{
+					td{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	#contacts{
+		.contact-details{
+
+			header{
+				padding: 40px;
+				padding-left: 80px;
+			}
+
+			.contact-wrapper{
+				padding-bottom: 50px;
+			}
+		}
+
+		.map-wrapper{
+			height: 400px;
+		}
+	}
+
+	.imprint-banner, privacy-banner{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.mobile-toggle{
+		top: 25px;
+	}
+
+	.frontpage #main{
+		position: relative;
+		margin-top: 0;
+
+		#nav-wrapper{
+			height: 70px;
+		}
+
+		#intro{
+
+			.main-intro{
+				min-height: 450px;
+				max-height: 450px;
+				float: none;
+				width: 100%;
+
+				.content-wrapper{
+					width: 70%;
+					left: 25px;
+
+					h2{
+						margin-bottom: 10px;
+					}
+
+					.button{
+						margin-top: 20px;
+						margin-left: 20px;
+					}
+				}
+			}
+
+			.side-intro{
+				min-height: 370px;
+				max-height: 370px;
+				width: 100%;
+				float: none;
+				background-color: #fff;
+
+				.content-wrapper{
+					position: absolute;
+					bottom: 40px;
+					left: 25px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.list-article{
+		ul li{
+		    font-size: 20px;
+		}
+	}
+
+	h1{
+		font-size: 50px;
+		line-height: 40px;
+	}
+
+	h2{
+		font-size: 35px;
+		line-height: 30px;
+	}
+
+	#mobile-nav{
+		width: 100% !important;
+
+		ul{
+			padding: 40px 30px;
+		}
+	}
+
+	.content-wrapper{
+		bottom: 5% !important;
+	}
+
+	#banner h1 {
+	    font-size: 3em;
+	}
+
+	.frontpage #main{
+
+		#intro{
+
+			.main-intro{
+				min-height: 400px;
+				max-height: 400px;
+
+				.content-wrapper{
+
+					h2{
+						font-size: 50px;
+					}
+
+					h3{
+						font-size: 16px;
+					}
+				}
+			}
+
+			.side-intro{
+				min-height: 220px;
+				max-height: 220px;
+
+				.content-wrapper{
+					position: absolute;
+					bottom: 25px;
+				}
+
+				h2{
+					font-size: 25px !important;
+	    			line-height: 25px !important;
+	    			margin-bottom: 0px !important;
+				}
+
+				h3{
+				    font-size: 16px !important;
+				}
+			}
+		}
+	}
+
+	#who-we-are{
+		padding-top: 30px !important;
+	    padding-bottom: 25px !important;
+	}
+
+	#facts{
+		height: 70vh;
+		min-height: 350px;
+	}
+
+	#team{
+		height: 100vh;
+		min-height: 450px;
+	}
+
+	#management{
+
+		.row section{
+
+			h3{
+				font-size: 25px;
+			    line-height: 25px;
+			    margin-bottom: 10px;
+			}
+
+			h3, h4{
+				margin-left: 17px;
+			}
+
+			article{
+
+				div{
+
+					h3{
+						font-size: 22px;
+					}
+
+					.separator{
+						margin: 10px auto;
+					}
+
+					p{
+					    font-size: 12px;
+					    line-height: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	#clients{
+
+		.clients-wrapper{
+
+			article{
+				height: 140px;
+			}
+		}
+		
+	}
+
+	#contacts{
+		.contact-details{
+
+			header{
+				padding-left: 40px;
+			}
+
+			.contact-wrapper{
+				padding: 40px 40px;
+				padding-bottom: 40px;
+			}
+		}
+
+		.map-wrapper{
+			height: 300px;
+		}
+	}
+
+	#footer{
+		height: auto;
+
+		#footer-nav{
+			float: none;
+
+			ul{
+				text-align: center;
+
+				li:last-child a{
+					margin-right: 0;
+				}
+			}
+		}
+
+		.footer-logo{
+			display: block;
+			float: none;
+			text-indent: -9999px;
+			height: 55px;
+			width: 130px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	
+}

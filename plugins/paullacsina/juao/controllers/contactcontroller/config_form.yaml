@@ -1,0 +1,10 @@
+name: ContactController
+form: $/paullacsina/juao/models/contact/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Contact
+defaultRedirect: paullacsina/juao/contactcontroller
+create:
+    redirect: 'paullacsina/juao/contactcontroller/update/:id'
+    redirectClose: paullacsina/juao/contactcontroller
+update:
+    redirect: paullacsina/juao/contactcontroller
+    redirectClose: paullacsina/juao/contactcontroller

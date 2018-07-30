@@ -1,0 +1,4 @@
+title: AwardController
+modelClass: PaulLacsina\Juao\Models\Award
+toolbar:
+    buttons: reorder_toolbar

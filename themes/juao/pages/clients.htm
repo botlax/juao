@@ -1,0 +1,55 @@
+title = "Clients"
+url = "/clients"
+layout = "default"
+is_hidden = 0
+==
+
+<?php
+	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Client;
+
+        $this['clients'] = Client::orderBy('order', 'ASC')->get();
+
+    }
+?>
+==
+<div id="main">
+	<section id="clients">
+		<article class="header-article">
+			
+			<header>
+				<h2>Clients</h2>
+			</header>
+			<div class="row">
+				<div class="col-8 col-12-small">
+					<p>Just us &amp; Otto prides itself on working with some of Qatar’s most innovative clientele. Our client base includes a wide range of local &amp; multi-national corporations, governement community organizations and various social enterprises.</p>
+				</div>
+			</div>
+		
+		</article>
+
+		<section class="row clients-wrapper">
+			{% for client in clients %}
+			<article class="col-3 col-4-large col-6-medium col-12-small">
+				<img src="{{ client.logo | media }}" alt="">
+				<section>
+					<div class="white-overlay"></div>
+					<header>
+						<h2>{{ client.company }}</h2>
+					</header>
+					<ul class="projects">
+						{% for project in client.projects %}
+						<li class="slash">{{ project.work }}</li>
+						{% endfor %}
+					</ul>
+				</section>
+			</article>
+			{% endfor %}
+
+		</section>
+	</section>
+</div>

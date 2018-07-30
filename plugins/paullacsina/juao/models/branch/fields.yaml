@@ -1,0 +1,6 @@
+fields:
+    location:
+        label: Location
+        span: auto
+        required: 1
+        type: text

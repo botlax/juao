@@ -1,0 +1,11 @@
+columns:
+    description:
+        label: Description
+        type: text
+        searchable: true
+        sortable: true
+    photo:
+        label: Link
+        type: text
+        searchable: true
+        sortable: true

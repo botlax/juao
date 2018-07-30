@@ -1,0 +1,12 @@
+list: $/paullacsina/juao/models/work/columns.yaml
+modelClass: PaulLacsina\Juao\Models\Work
+title: WorkController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'paullacsina/juao/workcontroller/update/:id'

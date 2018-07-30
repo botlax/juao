@@ -1,0 +1,157 @@
+1532961877a:1:{s:11:"careers.htm";a:9:{s:8:"fileName";s:11:"careers.htm";s:7:"content";s:2506:"title = "Careers"
+url = "/careers"
+layout = "default"
+is_hidden = 0
+==
+
+<?php
+	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Contact;
+        use Paullacsina\Juao\Models\Branch;
+        use Paullacsina\Juao\Models\Vacant;
+        use Paullacsina\Juao\Models\Bg;
+
+        $qatar = Branch::where('location','Qatar')->first();
+        $this['contact'] = $qatar->contact()->first();
+        $this['vacancies'] = $qatar->vacant()->get();
+        $this['career'] = Bg::where('description','Career')->first();
+    }
+?>
+==
+<div class="small-title-banner careers-banner" style="background-image: url('{{career.photo | media}}')">
+				
+	<h1>Discover<br>Just us &amp; Otto</h1>
+
+</div>
+
+<div id="main">
+	<div class="general-intro">
+		<div class="row">
+			<article class="col-8 col-12-small">
+				<p>An environment where flat hierarchies promote “doing” and taking initiative. An inspirational mix of cultures, disciplines and nationalities. Lots of room for lateral thinking and co-creation. Hands-on international experience and transcontinental office-hopping. A driven attitude born of boundless enthusiasm. A place where the team is the most valued asset.</p>
+
+				<h3>So how about you?</h3>
+				<p>We’re looking for “real” people. Show us your true self. Don’t waste your time rehearsing standard answers. Dare to be authentic.</p>
+			</article>
+			<aside class="col-4">
+			</aside>
+		</div>
+	</div>
+
+	<section id="vacancies">
+		<header>
+			<h2>Vacancies</h2>
+		</header>
+		<div class="row">
+			<section class="col-8 col-12-small">
+				<table>
+					<thead>
+						<tr>
+							<th>Job Title</th>
+							<th>Career Level</th>
+							<th>Field of Responsibility</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for vacant in vacancies %}
+						<tr>
+							<td>{{vacant.title}}</td>
+							<td>{{vacant.level}}</td>
+							<td>{{ vacant.field }}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</section>
+			<aside class="col-4 col-12-small contact-details">
+				<header>
+					<h2>Contact</h2>
+				</header>
+				<h3>Just us &amp; Otto Marketing Services W.L.L.</h3>
+				<p class="address">
+					{{ contact.address | raw }}
+					<span class="tel">Tel: {{ contact.tel }}</span>
+				</p>
+
+				<a class="button" href="mailto:{{ contact.email }}" role="button"> Send Mail </a>
+			</aside>
+		</div>
+	</section>
+</div>";s:5:"mtime";i:1532813693;s:6:"markup";s:1878:"<div class="small-title-banner careers-banner" style="background-image: url('{{career.photo | media}}')">
+				
+	<h1>Discover<br>Just us &amp; Otto</h1>
+
+</div>
+
+<div id="main">
+	<div class="general-intro">
+		<div class="row">
+			<article class="col-8 col-12-small">
+				<p>An environment where flat hierarchies promote “doing” and taking initiative. An inspirational mix of cultures, disciplines and nationalities. Lots of room for lateral thinking and co-creation. Hands-on international experience and transcontinental office-hopping. A driven attitude born of boundless enthusiasm. A place where the team is the most valued asset.</p>
+
+				<h3>So how about you?</h3>
+				<p>We’re looking for “real” people. Show us your true self. Don’t waste your time rehearsing standard answers. Dare to be authentic.</p>
+			</article>
+			<aside class="col-4">
+			</aside>
+		</div>
+	</div>
+
+	<section id="vacancies">
+		<header>
+			<h2>Vacancies</h2>
+		</header>
+		<div class="row">
+			<section class="col-8 col-12-small">
+				<table>
+					<thead>
+						<tr>
+							<th>Job Title</th>
+							<th>Career Level</th>
+							<th>Field of Responsibility</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for vacant in vacancies %}
+						<tr>
+							<td>{{vacant.title}}</td>
+							<td>{{vacant.level}}</td>
+							<td>{{ vacant.field }}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</section>
+			<aside class="col-4 col-12-small contact-details">
+				<header>
+					<h2>Contact</h2>
+				</header>
+				<h3>Just us &amp; Otto Marketing Services W.L.L.</h3>
+				<p class="address">
+					{{ contact.address | raw }}
+					<span class="tel">Tel: {{ contact.tel }}</span>
+				</p>
+
+				<a class="button" href="mailto:{{ contact.email }}" role="button"> Send Mail </a>
+			</aside>
+		</div>
+	</section>
+</div>";s:4:"code";s:533:"	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Contact;
+        use Paullacsina\Juao\Models\Branch;
+        use Paullacsina\Juao\Models\Vacant;
+        use Paullacsina\Juao\Models\Bg;
+
+        $qatar = Branch::where('location','Qatar')->first();
+        $this['contact'] = $qatar->contact()->first();
+        $this['vacancies'] = $qatar->vacant()->get();
+        $this['career'] = Bg::where('description','Career')->first();
+    }";s:5:"title";s:7:"Careers";s:3:"url";s:8:"/careers";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

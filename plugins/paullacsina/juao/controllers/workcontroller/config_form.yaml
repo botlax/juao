@@ -1,0 +1,10 @@
+name: WorkController
+form: $/paullacsina/juao/models/work/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Work
+defaultRedirect: paullacsina/juao/workcontroller
+create:
+    redirect: 'paullacsina/juao/workcontroller/update/:id'
+    redirectClose: paullacsina/juao/workcontroller
+update:
+    redirect: paullacsina/juao/workcontroller
+    redirectClose: paullacsina/juao/workcontroller

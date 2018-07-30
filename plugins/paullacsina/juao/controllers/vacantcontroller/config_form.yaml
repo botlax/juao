@@ -1,0 +1,10 @@
+name: VacantController
+form: $/paullacsina/juao/models/vacant/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Vacant
+defaultRedirect: paullacsina/juao/vacantcontroller
+create:
+    redirect: 'paullacsina/juao/vacantcontroller/update/:id'
+    redirectClose: paullacsina/juao/vacantcontroller
+update:
+    redirect: paullacsina/juao/vacantcontroller
+    redirectClose: paullacsina/juao/vacantcontroller

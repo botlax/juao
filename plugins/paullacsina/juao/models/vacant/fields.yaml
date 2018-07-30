@@ -1,0 +1,22 @@
+fields:
+    title:
+        label: 'Job Title'
+        span: auto
+        required: 1
+        type: text
+    level:
+        label: 'Career Level'
+        span: auto
+        required: 1
+        type: text
+    field:
+        label: 'Field of Responsibility'
+        span: auto
+        required: 1
+        type: text
+    branch:
+        label: Branch
+        nameFrom: location
+        descriptionFrom: description
+        span: auto
+        type: relation

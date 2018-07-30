@@ -1,0 +1,16 @@
+columns:
+    title:
+        label: 'Job Title'
+        type: text
+        searchable: true
+        sortable: true
+    level:
+        label: 'Career Level'
+        type: text
+        searchable: true
+        sortable: true
+    field:
+        label: Department
+        type: text
+        searchable: true
+        sortable: true

@@ -1,0 +1,4 @@
+title: ManagementController
+modelClass: PaulLacsina\Juao\Models\Management
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,10 @@
+name: ManagementController
+form: $/paullacsina/juao/models/management/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Management
+defaultRedirect: paullacsina/juao/managementcontroller
+create:
+    redirect: 'paullacsina/juao/managementcontroller/update/:id'
+    redirectClose: paullacsina/juao/managementcontroller
+update:
+    redirect: paullacsina/juao/managementcontroller
+    redirectClose: paullacsina/juao/managementcontroller

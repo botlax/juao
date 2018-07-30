@@ -1,0 +1,72 @@
+1532961878a:1:{s:11:"imprint.htm";a:9:{s:8:"fileName";s:11:"imprint.htm";s:7:"content";s:1492:"title = "Imprint"
+url = "/imprint"
+layout = "default"
+is_hidden = 0
+==
+<div class="container">
+<!-- Intro -->
+	<div class="small-title-banner imprint-banner">
+		
+		<h1>Imprint</h1>
+
+	</div>
+
+<!-- Main -->
+	<div id="main">
+		<article id="imprint">
+			<header>
+				<h2>Company Information</h2>
+			</header>
+			<p class="address">
+				Just us &amp; Otto Marketing Services W.L.L.<br>
+				33 Ibn Al-Awwam St. | Off B Ring Road<br>
+				P.O. Box 2461 | Doha | State of Qatar<br>
+				<span class="tel">Tel: +974 443 17036</span>
+				<span class="fax">Fax: +974 443 17036</span>
+				<a href="#" class="email">Email: info@justusandotto.com</a>
+			</p>
+			<p class="md">General Manager: Markus Hofmeister</p>
+			<p class="cr">C.R. No.: 50635 </p>
+		</article>
+		<article id="imprint">
+			<header>
+				<h2>LEGAL NOTICES/DATA PROTECTION</h2>
+			</header>
+			<p>Liability for content, hyperlinks :<br>Our offer also contains links to third-party websites, whose content we have no influence over. We do not make this content ourselves by any means and assume no liability for it. The respective entity responsible for the site bears exclusive responsibility for the content of the linked sites. Please inform us immediately if, via our links, you reach sites whose content seems dubious to you. As soon as infringements of the law resulting from the content of linked sites are made known to us, we will remove such links immediately.</p>
+		</article>
+	</div>
+
+</div>";s:5:"mtime";i:1532782904;s:6:"markup";s:1416:"<div class="container">
+<!-- Intro -->
+	<div class="small-title-banner imprint-banner">
+		
+		<h1>Imprint</h1>
+
+	</div>
+
+<!-- Main -->
+	<div id="main">
+		<article id="imprint">
+			<header>
+				<h2>Company Information</h2>
+			</header>
+			<p class="address">
+				Just us &amp; Otto Marketing Services W.L.L.<br>
+				33 Ibn Al-Awwam St. | Off B Ring Road<br>
+				P.O. Box 2461 | Doha | State of Qatar<br>
+				<span class="tel">Tel: +974 443 17036</span>
+				<span class="fax">Fax: +974 443 17036</span>
+				<a href="#" class="email">Email: info@justusandotto.com</a>
+			</p>
+			<p class="md">General Manager: Markus Hofmeister</p>
+			<p class="cr">C.R. No.: 50635 </p>
+		</article>
+		<article id="imprint">
+			<header>
+				<h2>LEGAL NOTICES/DATA PROTECTION</h2>
+			</header>
+			<p>Liability for content, hyperlinks :<br>Our offer also contains links to third-party websites, whose content we have no influence over. We do not make this content ourselves by any means and assume no liability for it. The respective entity responsible for the site bears exclusive responsibility for the content of the linked sites. Please inform us immediately if, via our links, you reach sites whose content seems dubious to you. As soon as infringements of the law resulting from the content of linked sites are made known to us, we will remove such links immediately.</p>
+		</article>
+	</div>
+
+</div>";s:4:"code";N;s:5:"title";s:7:"Imprint";s:3:"url";s:8:"/imprint";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

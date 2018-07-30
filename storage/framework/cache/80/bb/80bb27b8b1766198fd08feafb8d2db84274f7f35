@@ -1,0 +1,83 @@
+1532961836a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1281:"<div class="mobile-nav-container">
+	<div class="mobile-nav-overlay"></div>
+	<nav id="mobile-nav">
+		<a class="close-mobile-nav">
+			<span></span>
+		</a>
+		<ul>
+			<li><a href="{{url('about')}}">About</a></li>
+			<li><a href="{{url('work')}}">Work</a></li>
+			<li><a href="{{url('clients')}}">Clients</a></li>
+			<li><a href="{{url('careers')}}">Careers</a></li>
+			<li><a href="{{url('contact')}}">Contact</a></li>
+		</ul>
+	</nav>
+</div>
+<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="{{url('/')}}" class="logo" style="background-image:url('{{ logo | media }}');">Just Us &apm; Otto</a>
+				<nav id="social-nav">
+					<ul>
+						{% for social in socials %}
+						<li class="{{ social.platform }}"><a href="{{ social.link }}">{{ social.platform }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+
+				<nav id="main-nav">
+					<ul>
+						<li><a href="{{url('about')}}">About</a></li>
+						<li><a href="{{url('work')}}">Work</a></li>
+						<li><a href="{{url('clients')}}">Clients</a></li>
+						<li><a href="{{url('careers')}}">Careers</a></li>
+						<li><a href="{{url('contact')}}">Contact</a></li>
+					</ul>
+				</nav>
+				<a class="mobile-toggle">
+					<span></span>
+				</a>
+			</header>";s:5:"mtime";i:1532960297;s:6:"markup";s:1281:"<div class="mobile-nav-container">
+	<div class="mobile-nav-overlay"></div>
+	<nav id="mobile-nav">
+		<a class="close-mobile-nav">
+			<span></span>
+		</a>
+		<ul>
+			<li><a href="{{url('about')}}">About</a></li>
+			<li><a href="{{url('work')}}">Work</a></li>
+			<li><a href="{{url('clients')}}">Clients</a></li>
+			<li><a href="{{url('careers')}}">Careers</a></li>
+			<li><a href="{{url('contact')}}">Contact</a></li>
+		</ul>
+	</nav>
+</div>
+<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="{{url('/')}}" class="logo" style="background-image:url('{{ logo | media }}');">Just Us &apm; Otto</a>
+				<nav id="social-nav">
+					<ul>
+						{% for social in socials %}
+						<li class="{{ social.platform }}"><a href="{{ social.link }}">{{ social.platform }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+
+				<nav id="main-nav">
+					<ul>
+						<li><a href="{{url('about')}}">About</a></li>
+						<li><a href="{{url('work')}}">Work</a></li>
+						<li><a href="{{url('clients')}}">Clients</a></li>
+						<li><a href="{{url('careers')}}">Careers</a></li>
+						<li><a href="{{url('contact')}}">Contact</a></li>
+					</ul>
+				</nav>
+				<a class="mobile-toggle">
+					<span></span>
+				</a>
+			</header>";s:4:"code";N;}}

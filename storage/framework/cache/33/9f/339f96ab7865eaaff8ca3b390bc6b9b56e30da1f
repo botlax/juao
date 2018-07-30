@@ -1,0 +1,194 @@
+1532961877a:1:{s:11:"contact.htm";a:9:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:3405:"title = "Contact"
+url = "/contact"
+layout = "default"
+is_hidden = 0
+==
+
+<?php
+	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Contact;
+        use Paullacsina\Juao\Models\Branch;
+
+        $this['branches'] = Branch::all();
+        $this['contactBg'] = ['#472F8C', '#16A6DF', '#FCB420', '#CCDB2B'];
+    }
+?>
+==
+
+<div class="small-title-banner contact-banner">
+						
+	<h1>Contact</h1>
+	
+</div>
+
+<!-- Main -->
+<div id="main">
+	<div id="contacts">
+
+		<div class="row">
+
+			{% for branch in branches %}
+			<section class="col-6 col-12-small contact-details" style="background-color: {{ contactBg[loop.index0] }}">
+				<header style="background-image: url('./images/contact.jpg');">
+					<h2>{{ branch.location }}</h2>
+				</header>
+				<div class="contact-wrapper">
+					<h3>Just us &amp; Otto Marketing Services W.L.L., {{ branch.location }}</h3>
+					<p class="address">
+						{{ branch.contact.first.address | raw}}
+						<span class="tel">Tel: {{ branch.contact.first.tel | raw}}</span>
+						<span class="fax">Fax: {{ branch.contact.first.fax | raw}}</span>
+					</p>
+
+					<a class="button" href="mailto:{{ branch.contact.first.email | raw}}" role="button"> Send Mail </a>
+				</div>
+			</section>
+			{% endfor %}
+
+		</div>
+
+		<div class="row">
+			<section class="col-12 map-wrapper">
+				<div id="gmap"></div>
+			</section>
+		</div>
+
+	</div>
+</div>
+
+<script>
+
+  	function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('gmap'), {
+          	center: {lat: 25.384978, lng: 53.4249653},
+          	zoom: 8,
+          	zoomControl: false,
+		  	mapTypeControl: false,
+		  	scaleControl: false,
+		  	streetViewControl: false,
+		  	rotateControl: false,
+		  	fullscreenControl: true,
+          	styles:  [{ featureType: "landscape", elementType: "labels", stylers: [{ visibility: "off" }] }, { featureType: "transit", elementType: "labels", stylers: [{ visibility: "off" }] }, { featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }] }, { featureType: "water", elementType: "labels", stylers: [{ visibility: "off" }] }, { featureType: "road", elementType: "labels.icon", stylers: [{ visibility: "off" }] }, { stylers: [{ hue: "#00aaff" }, { saturation: -100 }, { gamma: 2.15 }, { lightness: 12 }] }, { featureType: "road", elementType: "labels.text.fill", stylers: [{ visibility: "on" }, { lightness: 24 }] }, { featureType: "road", elementType: "geometry", stylers: [{ lightness: 57 }] }]
+        });
+
+        {% for branch in branches %}
+        marker = new google.maps.Marker({
+		    map: map,
+		    icon: '{{'assets/images/pin.png' | theme}}',
+		    draggable: false,
+		    animation: google.maps.Animation.DROP,
+		    position: {lat: {{ branch.contact.first.lat | raw}}, lng: {{ branch.contact.first.long | raw}}}
+		});
+        {% endfor %}
+
+		marker.addListener('click', toggleBounce);
+	}
+
+  	function toggleBounce() {
+	  	if (marker.getAnimation() !== null) {
+	    	marker.setAnimation(null);
+	  	} else {
+	    	marker.setAnimation(google.maps.Animation.BOUNCE);
+	  	}
+	}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvwrEicy98Ez77ZAu9bFL7bP8QvZ7bVgU&callback=initMap"
+    async defer></script>";s:5:"mtime";i:1532955955;s:6:"markup";s:2985:"<div class="small-title-banner contact-banner">
+						
+	<h1>Contact</h1>
+	
+</div>
+
+<!-- Main -->
+<div id="main">
+	<div id="contacts">
+
+		<div class="row">
+
+			{% for branch in branches %}
+			<section class="col-6 col-12-small contact-details" style="background-color: {{ contactBg[loop.index0] }}">
+				<header style="background-image: url('./images/contact.jpg');">
+					<h2>{{ branch.location }}</h2>
+				</header>
+				<div class="contact-wrapper">
+					<h3>Just us &amp; Otto Marketing Services W.L.L., {{ branch.location }}</h3>
+					<p class="address">
+						{{ branch.contact.first.address | raw}}
+						<span class="tel">Tel: {{ branch.contact.first.tel | raw}}</span>
+						<span class="fax">Fax: {{ branch.contact.first.fax | raw}}</span>
+					</p>
+
+					<a class="button" href="mailto:{{ branch.contact.first.email | raw}}" role="button"> Send Mail </a>
+				</div>
+			</section>
+			{% endfor %}
+
+		</div>
+
+		<div class="row">
+			<section class="col-12 map-wrapper">
+				<div id="gmap"></div>
+			</section>
+		</div>
+
+	</div>
+</div>
+
+<script>
+
+  	function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('gmap'), {
+          	center: {lat: 25.384978, lng: 53.4249653},
+          	zoom: 8,
+          	zoomControl: false,
+		  	mapTypeControl: false,
+		  	scaleControl: false,
+		  	streetViewControl: false,
+		  	rotateControl: false,
+		  	fullscreenControl: true,
+          	styles:  [{ featureType: "landscape", elementType: "labels", stylers: [{ visibility: "off" }] }, { featureType: "transit", elementType: "labels", stylers: [{ visibility: "off" }] }, { featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }] }, { featureType: "water", elementType: "labels", stylers: [{ visibility: "off" }] }, { featureType: "road", elementType: "labels.icon", stylers: [{ visibility: "off" }] }, { stylers: [{ hue: "#00aaff" }, { saturation: -100 }, { gamma: 2.15 }, { lightness: 12 }] }, { featureType: "road", elementType: "labels.text.fill", stylers: [{ visibility: "on" }, { lightness: 24 }] }, { featureType: "road", elementType: "geometry", stylers: [{ lightness: 57 }] }]
+        });
+
+        {% for branch in branches %}
+        marker = new google.maps.Marker({
+		    map: map,
+		    icon: '{{'assets/images/pin.png' | theme}}',
+		    draggable: false,
+		    animation: google.maps.Animation.DROP,
+		    position: {lat: {{ branch.contact.first.lat | raw}}, lng: {{ branch.contact.first.long | raw}}}
+		});
+        {% endfor %}
+
+		marker.addListener('click', toggleBounce);
+	}
+
+  	function toggleBounce() {
+	  	if (marker.getAnimation() !== null) {
+	    	marker.setAnimation(null);
+	  	} else {
+	    	marker.setAnimation(google.maps.Animation.BOUNCE);
+	  	}
+	}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvwrEicy98Ez77ZAu9bFL7bP8QvZ7bVgU&callback=initMap"
+    async defer></script>";s:4:"code";s:323:"	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Contact;
+        use Paullacsina\Juao\Models\Branch;
+
+        $this['branches'] = Branch::all();
+        $this['contactBg'] = ['#472F8C', '#16A6DF', '#FCB420', '#CCDB2B'];
+    }";s:5:"title";s:7:"Contact";s:3:"url";s:8:"/contact";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

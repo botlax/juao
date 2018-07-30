@@ -1,0 +1,54 @@
+==
+
+<?php 
+	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Social;
+
+        $this['social'] = Social::all();
+
+        $this['logo'] = 'Logos/logo'.rand(1,8).'.png';
+        
+    }
+?>
+
+==
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Just Us & Otto - {{ this.page.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}" />
+		<link href="https://vjs.zencdn.net/7.0.5/video-js.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css'|theme }}" /></noscript>
+	</head>
+	<body>
+		
+		{% partial 'site/header' socials=social logo=logo %}
+
+		{% page %}
+
+		{% partial 'site/footer' logo=logo %}
+
+
+		<!-- Scripts -->
+			<script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.easeScroll.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.scrollex.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.scrolly.min.js'|theme }}"></script>
+			<script src="https://vjs.zencdn.net/7.0.5/video.js"></script>
+			<script src="http://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+			<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			<script src="{{ 'assets/js/browser.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/breakpoints.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/util.js'|theme }}"></script>
+			<script src="{{ 'assets/js/main.js'|theme }}"></script>
+
+	</body>
+</html>

@@ -1,0 +1,29 @@
+columns:
+    title:
+        label: 'Event Name'
+        type: text
+        searchable: true
+        sortable: true
+    tagline:
+        label: 'Tag Line'
+        type: text
+        searchable: true
+        sortable: true
+    client:
+        label: Client
+        type: text
+        searchable: true
+        sortable: true
+    mode:
+        label: Mode
+        type: text
+        searchable: false
+        sortable: true
+    order:
+        label: Order
+        type: number
+        sortable: true
+    branch_id:
+        label: Branch
+        type: number
+        sortable: true

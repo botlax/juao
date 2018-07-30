@@ -1,0 +1,4 @@
+title: WorkController
+modelClass: PaulLacsina\Juao\Models\Work
+toolbar:
+    buttons: reorder_toolbar

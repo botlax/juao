@@ -1,0 +1,10 @@
+fields:
+    description:
+        label: Description
+        span: left
+        type: text
+    photo:
+        label: Photo
+        mode: image
+        span: right
+        type: mediafinder

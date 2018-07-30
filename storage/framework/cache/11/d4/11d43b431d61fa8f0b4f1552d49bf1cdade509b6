@@ -1,0 +1,21 @@
+1532961837a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:342:"	<footer id="footer">
+		<nav id="footer-nav">
+			<ul>
+				<li><a href="{{url('imprint')}}">Imprint</a></li>
+				<li><a href="{{url('privacy-policy')}}">Privacy Policy</a></li>
+			</ul>
+		</nav>
+		<a href="{{url('/')}}" class="footer-logo" style="background-image:url('{{ logo | media }}');">Just Us &apm; Otto</a>
+	</footer>
+
+</div>";s:5:"mtime";i:1532960289;s:6:"markup";s:341:"<footer id="footer">
+		<nav id="footer-nav">
+			<ul>
+				<li><a href="{{url('imprint')}}">Imprint</a></li>
+				<li><a href="{{url('privacy-policy')}}">Privacy Policy</a></li>
+			</ul>
+		</nav>
+		<a href="{{url('/')}}" class="footer-logo" style="background-image:url('{{ logo | media }}');">Just Us &apm; Otto</a>
+	</footer>
+
+</div>";s:4:"code";N;}}

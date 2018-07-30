@@ -1,0 +1,16 @@
+columns:
+    address:
+        label: Address
+        type: text
+        searchable: true
+        sortable: true
+    tel:
+        label: Telephone
+        type: text
+        searchable: true
+        sortable: true
+    fax:
+        label: Fax
+        type: text
+        searchable: true
+        sortable: true

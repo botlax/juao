@@ -1,0 +1,62 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table paullacsina_juao_bg'
+    - builder_table_create_paullacsina_juao_bg.php
+1.0.3:
+    - 'Updated table paullacsina_juao_bg'
+    - builder_table_update_paullacsina_juao_bg.php
+1.0.4:
+    - 'Created table paullacsina_juao_works'
+    - builder_table_create_paullacsina_juao_works.php
+1.0.5:
+    - 'Created table paullacsina_juao_branch'
+    - builder_table_create_paullacsina_juao_branch.php
+1.0.6:
+    - 'Updated table paullacsina_juao_works'
+    - builder_table_update_paullacsina_juao_works.php
+1.0.7:
+    - 'Created table paullacsina_juao_social'
+    - builder_table_create_paullacsina_juao_social.php
+1.0.8:
+    - 'Created table paullacsina_juao_management'
+    - builder_table_create_paullacsina_juao_management.php
+1.0.9:
+    - 'Updated table paullacsina_juao_management'
+    - builder_table_update_paullacsina_juao_management.php
+1.0.10:
+    - 'Created table paullacsina_juao_awards'
+    - builder_table_create_paullacsina_juao_awards.php
+1.0.11:
+    - 'Updated table paullacsina_juao_works'
+    - builder_table_update_paullacsina_juao_works_2.php
+1.0.12:
+    - 'Created table paullacsina_juao_'
+    - builder_table_create_paullacsina_juao_.php
+1.0.13:
+    - 'Updated table paullacsina_juao_'
+    - builder_table_update_paullacsina_juao_clients.php
+1.0.14:
+    - 'Updated table paullacsina_juao_clients'
+    - builder_table_update_paullacsina_juao_clients_2.php
+1.0.15:
+    - 'Created table paullacsina_juao_contact'
+    - builder_table_create_paullacsina_juao_contact.php
+1.0.16:
+    - 'Updated table paullacsina_juao_contact'
+    - builder_table_update_paullacsina_juao_contact.php
+1.0.17:
+    - 'Updated table paullacsina_juao_contact'
+    - builder_table_update_paullacsina_juao_contact_2.php
+1.0.18:
+    - 'Created table paullacsina_juao_vacancies'
+    - builder_table_create_paullacsina_juao_vacancies.php
+1.0.19:
+    - 'Updated table paullacsina_juao_works'
+    - builder_table_update_paullacsina_juao_works_3.php
+1.0.20:
+    - 'Updated table paullacsina_juao_works'
+    - builder_table_update_paullacsina_juao_works_4.php
+1.0.21:
+    - 'Updated table paullacsina_juao_works'
+    - builder_table_update_paullacsina_juao_works_5.php

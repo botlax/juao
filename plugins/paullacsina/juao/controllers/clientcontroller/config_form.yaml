@@ -1,0 +1,10 @@
+name: ClientController
+form: $/paullacsina/juao/models/client/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Client
+defaultRedirect: paullacsina/juao/clientcontroller
+create:
+    redirect: 'paullacsina/juao/clientcontroller/update/:id'
+    redirectClose: paullacsina/juao/clientcontroller
+update:
+    redirect: paullacsina/juao/clientcontroller
+    redirectClose: paullacsina/juao/clientcontroller

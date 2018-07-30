@@ -1,0 +1,10 @@
+name: SocialController
+form: $/paullacsina/juao/models/social/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Social
+defaultRedirect: paullacsina/juao/socialcontroller
+create:
+    redirect: 'paullacsina/juao/socialcontroller/update/:id'
+    redirectClose: paullacsina/juao/socialcontroller
+update:
+    redirect: paullacsina/juao/socialcontroller
+    redirectClose: paullacsina/juao/socialcontroller

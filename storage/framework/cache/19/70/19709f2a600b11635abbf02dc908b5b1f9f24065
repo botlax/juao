@@ -1,0 +1,102 @@
+1532961792a:1:{s:9:"front.htm";a:6:{s:8:"fileName";s:9:"front.htm";s:7:"content";s:1707:"==
+
+<?php 
+	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Social;
+
+        $this['social'] = Social::all();
+
+        $this['logo'] = 'Logos/logo'.rand(1,8).'.png';
+        Session::put('logo', $this['logo']);
+        
+    }
+?>
+
+==
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Just Us & Otto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}" />
+		<link rel="stylesheet" href="{{ 'assets/css/revslider.css'|theme }}" />
+		<noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css'|theme }}" /></noscript>
+		
+	</head>
+	<body class="frontpage">
+			
+		{% partial 'front/header' socials=social logo=logo %}
+
+		{% page %}
+			
+		{% partial 'front/footer' logo=logo %}
+
+		<!-- Scripts -->
+
+			<script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.easeScroll.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.scrollex.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.scrolly.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/tools.js'|theme }}"></script>
+			<script src="{{ 'assets/js/rev.js'|theme }}"></script>
+			<script src="{{ 'assets/js/external.js'|theme }}"></script>
+			<script src="{{ 'assets/js/browser.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/breakpoints.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/util.js'|theme }}"></script>
+			<script src="{{ 'assets/js/main.js'|theme }}"></script>
+	</body>
+</html>";s:5:"mtime";i:1532961147;s:6:"markup";s:1366:"<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Just Us & Otto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}" />
+		<link rel="stylesheet" href="{{ 'assets/css/revslider.css'|theme }}" />
+		<noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css'|theme }}" /></noscript>
+		
+	</head>
+	<body class="frontpage">
+			
+		{% partial 'front/header' socials=social logo=logo %}
+
+		{% page %}
+			
+		{% partial 'front/footer' logo=logo %}
+
+		<!-- Scripts -->
+
+			<script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.easeScroll.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.scrollex.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/jquery.scrolly.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/tools.js'|theme }}"></script>
+			<script src="{{ 'assets/js/rev.js'|theme }}"></script>
+			<script src="{{ 'assets/js/external.js'|theme }}"></script>
+			<script src="{{ 'assets/js/browser.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/breakpoints.min.js'|theme }}"></script>
+			<script src="{{ 'assets/js/util.js'|theme }}"></script>
+			<script src="{{ 'assets/js/main.js'|theme }}"></script>
+	</body>
+</html>";s:4:"code";s:316:" 
+	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Social;
+
+        $this['social'] = Social::all();
+
+        $this['logo'] = 'Logos/logo'.rand(1,8).'.png';
+        Session::put('logo', $this['logo']);
+        
+    }";s:17:"_PARSER_ERROR_INI";s:0:"";}}

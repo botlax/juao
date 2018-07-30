@@ -1,0 +1,10 @@
+columns:
+    company:
+        label: Company
+        type: text
+        searchable: true
+        sortable: true
+    order:
+        label: Order
+        type: number
+        sortable: true

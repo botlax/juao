@@ -1,0 +1,4 @@
+title: ClientController
+modelClass: PaulLacsina\Juao\Models\Client
+toolbar:
+    buttons: reorder_toolbar

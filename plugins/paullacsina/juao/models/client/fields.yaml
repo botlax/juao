@@ -1,0 +1,29 @@
+fields:
+    company:
+        label: Company
+        span: auto
+        required: 1
+        type: text
+    logo:
+        label: Logo
+        mode: image
+        span: auto
+        required: 1
+        type: mediafinder
+    projects:
+        label: Projects
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                work:
+                    label: Project
+                    span: auto
+                    required: 1
+                    type: text
+    order:
+        label: Order
+        span: auto
+        required: 1
+        type: number

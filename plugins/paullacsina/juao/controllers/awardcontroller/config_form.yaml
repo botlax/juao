@@ -1,0 +1,10 @@
+name: AwardController
+form: $/paullacsina/juao/models/award/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Award
+defaultRedirect: paullacsina/juao/awardcontroller
+create:
+    redirect: 'paullacsina/juao/awardcontroller/update/:id'
+    redirectClose: paullacsina/juao/awardcontroller
+update:
+    redirect: paullacsina/juao/awardcontroller
+    redirectClose: paullacsina/juao/awardcontroller

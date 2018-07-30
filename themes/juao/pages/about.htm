@@ -1,0 +1,144 @@
+title = "About"
+url = "/about"
+layout = "default"
+is_hidden = 0
+==
+<?php
+	public function onStart(){
+        $this->prepareVars();
+    }
+
+    public function prepareVars(){
+        use Paullacsina\Juao\Models\Bg;
+        use Paullacsina\Juao\Models\Management;
+        use Paullacsina\Juao\Models\Award;
+
+        $this['principle'] = Bg::where('description','Principle')->first();
+        $this['facts'] = Bg::where('description','Facts')->first();
+        $this['team'] = Bg::where('description','Team')->first();
+        $this['management'] = Management::orderBy('order','ASC')->get();
+        $this['awards'] = Award::all();
+
+    }
+?>
+==
+<div id="main">
+	<section id="principles" class="list-article" style="background-image: url('{{ principle.photo | media }}')">
+		<div class="content-wrapper">
+			<header>
+				<h1>Our Principles</h1>
+			</header>
+			<ul>
+				<li>We Embrace Diversity</li>
+				<li>We Explore the Unknown</li>
+				<li>We Captivate Audiences</li>
+			</ul>
+		</div>
+
+		<a href="#who-we-are" class="mouse-scroll scrolly"></a>
+	</section>
+
+	<section id="who-we-are" class="general-list-article">
+		<header>
+			<h2>Who We Are</h2>
+		<div class="row">
+			<section class="col-6 col-12-small">
+				<header>
+					<h3 class="slash">Your creative partner for emotional experiences</h3>
+				</header>
+				<p>Just us &amp; Otto unleashes creativity and connects people to brands at every step. Breaking away from our affiliated company to form our own identity meant making some tough decisions like, what do we stand for? In a digital age, the spread of information is vast, and overwhelming. We have an all-inclusive access, but how do we stand out?</p>
+				<p>Well, we’re for everyone; we don’t have time to pretend. For us, authenticity is key. Time-pressured consumers and businesses need clear, concise and relevant information. We dream big, and develop pioneering ideas. We are driven by goals, and want to see our clients grow. To be noticed, you have to be different. You’ll be working with a multi-disciplinary team, each one of us explorers. We will convert our ideas into ingenious expressions exclusively for your brand.</p>
+			</section>
+			<section class="col-6 col-12-small">
+				<header>
+					<h3 class="slash">Just us &amp; Otto, Qatar</h3>
+				</header>
+				<p>In Qatar, we’re part of the fastest growing economy in the Middle East. The country has a clear national vision and an impressive events calendar that includes the 2022 Football World Cup and around 40 international sports competitions. Honesty and credibility are our watchwords. Only relationships built on solid foundations can excel. We can understand your brand and win you fans with a clear and concise image.</p>
+			</section>
+			<section class="col-6 col-12-small">
+				<header>
+					<h3 class="slash">Transforming consumers into Fans</h3>
+				</header>
+				<p>We brew together every aspect of creative, physical and digital resources into engaging brand experiences. By developing interactive scenarios, our audiences are drawn into the brand’s magic, complete with its values and personality. Ultimately, clients feel as though they have engaged with a truly visionary and exciting company. We will provide solid, creative and innovative solutions to captivate and create positive changes, while realizing brand dreams.</p>
+			</section>
+			
+		</div>
+	</section>
+
+	<section id="facts" class="list-article" style="background-image: url('{{ facts.photo | media }}')">
+		<div class="content-wrapper">
+			<header>
+				<h2>Quick Facts</h2>
+			</header>
+			<ul>
+				<li>Founded in 2011</li>
+				<li>Rebranded in 2017</li>
+				<li>15 Brand Experience Professionals</li>
+				<li>40 Local &amp; Multi-national Clients</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="team" class="list-article parallax" style="background-image: url('{{ team.photo | media }}')">
+		<div class="content-wrapper">
+			<header>
+				<h2>The Team</h2>
+			</header>
+			<section>
+				<header>
+					<h3 class="slash">MANY TALENTS AS A UNIFIED TEAM</h3>
+				</header>
+				<div class="row">
+					<div class="col-6 col-8-medium col-12-small">
+						<p>Just us &amp; Otto is an agency of multidisciplinary talents working as a unified team under the leadership of ideas. We translate brand values into brand experiences and build long-term brand-consumer relationships or in simple words: We create fans for brands.</p>
+					</div>
+			</section>
+		</div>
+	</section>
+
+	<section id="management" class="general-article">
+		<section>
+			<header>
+				<h2>Management</h2>
+			</header>
+			<div class="row">
+				{% for manager in management %}
+				<section class="col-4 col-6-large col-12-small">
+					<img src="{{ manager.photo | media }}">
+					<header>
+						<h3>{{ manager.name }}</h3>
+						<h4 class="slash">{{ manager.position }}</h4>
+					</header>
+					<div class="white-overlay"></div>
+					<article>
+						<div>
+							<header>
+								<h3>{{ manager.name }}</h3>
+							</header>
+							<div class="separator"></div>
+							<p>{{ manager.bio }}</p>
+						</div>
+					</article>
+				</section>
+				{% endfor %}
+			</div>
+		</section>
+	</section>
+
+	<section id="awards" class="general-article">
+		<section>
+			<header>
+				<h2>Our Awards</h2>
+			</header>
+			<div class="row">
+				{% for award in awards %}
+				<section class="col-4 col-6-medium col-12-small" style="background-image:url('{{award.photo | media}}')">
+					<header>
+						<h3>{{award.award}}</h3>
+					</header>
+				</section>
+				{% endfor %}
+			</div>
+		</section>
+	</section>
+</div>

@@ -1,0 +1,10 @@
+name: BgController
+form: $/paullacsina/juao/models/bg/fields.yaml
+modelClass: PaulLacsina\Juao\Models\Bg
+defaultRedirect: paullacsina/juao/bgcontroller
+create:
+    redirect: 'paullacsina/juao/bgcontroller/update/:id'
+    redirectClose: paullacsina/juao/bgcontroller
+update:
+    redirect: paullacsina/juao/bgcontroller
+    redirectClose: paullacsina/juao/bgcontroller

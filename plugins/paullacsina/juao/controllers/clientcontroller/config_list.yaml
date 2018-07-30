@@ -1,0 +1,12 @@
+list: $/paullacsina/juao/models/client/columns.yaml
+modelClass: PaulLacsina\Juao\Models\Client
+title: ClientController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'paullacsina/juao/clientcontroller/update/:id'

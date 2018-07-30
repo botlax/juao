@@ -1,0 +1,28 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        required: 1
+        type: text
+    position:
+        label: Position
+        span: auto
+        required: 1
+        type: text
+    bio:
+        label: Bio
+        size: ''
+        span: auto
+        required: 1
+        type: textarea
+    photo:
+        label: Photo
+        mode: image
+        span: auto
+        required: 1
+        type: mediafinder
+    order:
+        label: Order
+        span: auto
+        required: 1
+        type: number
